@@ -1,0 +1,110 @@
+:root{
+  scroll-behavior: smooth;
+}
+body,html{
+
+  font-family: Roboto Mono, monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenedor{
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+}
+header{
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(251, 194, 235, 0.5) 0%, rgba(166, 192, 238, 0.507) 100%), url(../Grupal_page/title-logic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+.head {
+  padding: 70px 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centro vertical */
+  align-items: center;     /* centro horizontal */
+  text-align: center;
+}
+.menu{
+  position: fixed;
+  top: 30px;
+  right: 30;
+  background: #fff;
+}
+
+.intro-ejemplos{
+  margin: 0 0 20px;
+  color: #444;
+}
+
+.ejemplos-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.ejemplo-card{
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.ejemplo-card summary{
+  padding: 16px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ejemplo-card summary::-webkit-details-marker{
+  display: none;
+}
+
+.ejemplo-card summary::after{
+  content: "+";
+  font-size: 1.1rem;
+  color: #4b5ac6;
+}
+
+.ejemplo-card[open] summary::after{
+  content: "-";
+}
+
+.ejemplo-lista{
+  list-style: none;
+  padding: 0 18px 12px 22px;
+  margin: 0;
+}
+
+.ejemplo-lista li{
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.ejemplo-lista li::before{
+  content: "*";
+  position: absolute;
+  left: 0;
+  color: #4b5ac6;
+}
+
+.ejemplo-nota{
+  margin: 0 18px 18px;
+  color: #555;
+  font-size: 0.95rem;
+}

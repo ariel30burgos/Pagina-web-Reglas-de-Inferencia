@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto grupal - Reglas de inferencia</title>
+    <link rel="stylesheet" href="decorat.css">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header" id="inicio">
+      <img src="list-menu.svg" alt="Menú" class="menu">
+
+      <nav class="menu-navegacion">
+         <a href="#introduccion">Introducción</a>
+         <a href="#reglas">Reglas</a>
+         <a href="#ejemplos">Ejemplos</a>
+         <a href="#ejercicio">Ejercicio</a>
+         <a href="#video">Video</a>
+       </nav>
+
+       <div class="contenedor head">
+         <h1>Reglas de Inferencia</h1>
+         </div>
+     </header>
+
+
+
+    <main>
+        <section id="introduccion" class="introduccion contenedor">
+            <h2>Introduccion</h2>
+            <p>CONTENIDO DE LA INTRODUCIION</p>
+            <P>Son principios lógicos que permiten derivar conclusiones válidas a partir de un conjunto de premisas(proposiciones)</P>
+            <p>Se usan en lógica proposicional y lógica matemática para estructurar argumentos válidos. Ademas, si las premisas son verdaderas y se aplican reglas válidas, la conclusión también será verdadera.</p>
+            <p>Entiendace el Argumento como una secuencia de proposiciones escritas: p1 ...[agrgar el resto]
+        </section>
+
+        <section id="reglas" class="contenedor">
+            <h2>Reglas de inferencia y Tabla guia</h2>
+            <p>CONTENIDO DE REGLAS</p>
+        </section>
+
+        <section id="ejemplos" class="contenedor">
+            <h2>Ejemplos</h2>
+            <p class="intro-ejemplos">Despliega cada regla para ver el ejemplo aplicado.</p>
+            <div class="ejemplos-grid">
+                <details class="ejemplo-card" open>
+                    <summary>Modus Tollens</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p &rarr; q: Si Zeus es humano, entonces Zeus es mortal.</li>
+                        <li>&not; q: Zeus es inmortal.</li>
+                        <li>&therefore; &not; p: Zeus no es humano.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Si de p se deduce q, pero se niega q, entonces se niega p.</p>
+                </div>
+
+                <details class="ejemplo-card">
+                    <summary>Introducción de la Disyunción (Generalización o Suma)</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p: Zeus es inmortal.</li>
+                        <li>q: Zeus es humano (proposición cualquiera).</li>
+                        <li>p &vee; q: Zeus es inmortal o Zeus es humano.</li>
+                    </ul>
+                    <p class="ejemplo-nota">La regla permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Modus Ponens</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p → q: Si hoy es martes, entonces Juan se irá a trabajar.</li>
+                        <li>p: Hoy es martes.</li>
+                        <li>p ∴ q: Juan irá a trabajar.</li>
+                    </ul>
+                    <p class="ejemplo-nota">"El modo que, al afirmar, afirma“.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Silogismo Hipotético</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p → q: Si estudio, entonces aprobaré el examen.</li>
+                        <li>q → r: Si apruebo el examen, entonces pasaré el curso.</li>
+                        <li>p ∴ r: Si estudio, entonces pasaré el curso.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Permite derivar una conclusión a partir de dos condicionales encadenados.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Silogismo Disyuntivo</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p ∨ q: O llueve o hace sol.</li>
+                        <li>¬p: No está lloviendo.</li>
+                        <li>∴ q: Entonces, está haciendo sol.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Si se tiene una disyunción y se niega una de las opciones, se puede concluir que la otra opción es verdadera.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Conjunción</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p: María es estudiante.</li>
+                        <li>q: María trabaja medio tiempo.</li>
+                        <li>p ∧ q: María es estudiante y trabaja medio tiempo.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Permite combinar dos proposiciones verdaderas en una sola afirmación conjunta.</p>
+            </details>
+            <details class="ejemplo-card">
+                <summary>Adición</summary>
+                <ul class="ejemplo-lista">
+                    <li>p: El cielo es azul.</li>
+                    <li>q: La hierba es verde (proposición cualquiera).</li>
+                    <li>p ∨ q: El cielo es azul o la hierba es verde.</li>
+                </ul>
+                <p class="ejemplo-nota">Permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
+            </details>
+
+        </section>
+
+        <section id="ejercicio" class="contenedor">
+            <h2>Ejercicio interactivo</h2>
+            <p>CONTENIDO DE LOS EJERICIOS COMO ORACIONES Y UN EJERICIO DEL CODIGO EN MATLAB</p>
+            <P>Te mostramos el codigo ejecutable. Utilizamos la plataforma de Matlab para presentarte el siguiente codigo que fue utilizado para la representacion de tablas de inferencia y su respectivo analisis
+            </P>
+        </section>
+
+        <section id="video" class="video contenedor">
+            <h2 class="subtitulo">Video</h2>
+
+            <div class="video-wrapper">
+                <iframe
+                src="https://www.youtube.com/embed/Sct5j7Quo54"
+                title="video demostrativo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+                </iframe>
+            </div>
+
+            <p>LINK DEL VIDEO CON UN ICONO DE YOUTUBE O COLOCAR EL VIDEO DIRECTO EN LA PAGINA</p>
+        </section>
+    </main>
+
+
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="marca-de-agua">MathDiscretas EPN</h2>
+                <p>Solventamos cualquier duda que surga durante tu aprendizaje en nuestra pagina</p>
+            </div>
+            <div class="asistencia-virtual">
+                <a href="./" class="icono-asistencia">
+                    <i class='bx  bx-help-circle'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/categories.js"></script>
+    <!--<script src="js/lightbox.js"><srcipt>-->
+</body>
+</html>
