@@ -1,8 +1,8 @@
 :root{
   scroll-behavior: smooth;
   /* Fuente del título de portada: cambia aquí si quieres otra */
-
   --font-family: 'Arial Black', sans-serif;
+  --font-title: 'Playfair Display', serif;
 }
 body,html{
 
