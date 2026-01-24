@@ -737,22 +737,6 @@
     </main>
 
 
-    <footer id="contacto">
-        <div class="contenedor footer-content">
-            <div class="contact-us">
-                <h2 class="marca-de-agua">MathDiscretas EPN</h2>
-                <p>Solventamos cualquier duda que surga durante tu aprendizaje en nuestra pagina</p>
-            </div>
-            <div class="asistencia-virtual">
-                <a href="./" class="icono-asistencia">
-                    <i class='bx  bx-help-circle'></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/categories.js"></script>
-    <!--<script src="js/lightbox.js"><srcipt>-->
 
     <script>
         // ====== MENÚ HAMBURGUESA ======
@@ -946,5 +930,40 @@
         // Cargar la primera ronda al iniciar
         cargarRonda(1);
     </script>
-</body>
+
+
+
+<!--ESTE ES EL PIE DE PAGINA-->  
+<footer class="footer"> 
+  <div class="footer-contenido">
+
+    <div class="footer-info">
+      <h1>MathDiscretas EPN</h1>
+      <p>Solventamos cualquier duda que surja durante tu aprendizaje.</p>
+    </div>
+
+    <div class="footer-ayuda">
+      <a class="icono-ayuda" id="botnoAyuda" title="Tengo una pregunta">
+        <i class='bx bx-help-circle'></i>
+      </a>
+    </div>
+  </div>
+  
+  <div class="footer-comentarios" id="comentarios">
+  <h3>Déjanos tu pregunta</h3>
+
+  <form class="ventana-comentarios">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea placeholder="Escribe tu comentario..." required></textarea>
+    <button type="submit">Enviar</button>    
+  </form>
+  </div>
+  <a href="#comentarios" class="icono-ayuda" id="botonAyuda">
+    <i class='bx bx-help-circle'></i>
+  </a>
+
+  </footer>
+
+ </body>
 </html>

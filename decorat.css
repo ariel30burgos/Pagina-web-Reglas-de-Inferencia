@@ -92,8 +92,8 @@ body,html{
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background: #ffffff;
   z-index: 999;
   cursor: pointer;
@@ -181,9 +181,6 @@ body,html{
   border-radius: 8px;
 }
 
-.intro-ejemplos{
-  color: #ffffff;
-}
 
 
 .menu-navegacion.activo{
@@ -300,13 +297,6 @@ body,html{
 }
 
 /* ====== ESTILOS PARA EJERCICIOS INTERACTIVOS ====== */
-
-.intro-ejercicios {
-  color: #fff;
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
 .indicador-ronda {
   background: linear-gradient(90deg, #2563eb, #ef4444);
@@ -523,4 +513,81 @@ body,html{
   .pregunta-card {
     padding: 20px;
   }
+}
+
+
+/*VISTA DEL PIE DE PAGINA*/
+.footer {
+  background: #1a0a3d;
+  color: white;
+  padding: 40px 20px;
+}
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.footer-info h2 {
+  margin-bottom: 8px;
+}
+.footer-info p {
+  font-size: 16px;  
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.footer-ayuda {
+  display: flex;
+  justify-content: flex-end;
+}
+.icono-ayuda {
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: azure;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  z-index: 1000; /*ES PARA PODER DARLE CLICK*/
+  text-decoration: none;
+}
+.icono-ayuda i { /*tamaño del icono ?*/
+  font-size: 30px;
+}
+/*hace el efecto especil de la iluminacion en el icono*/
+.icono-ayuda:hover {
+  background: white;
+  color: #1a0a3d;
+}
+.footer-comentarios {
+  max-width: 600px;
+  margin: auto;
+}
+.ventana-comentarios input,
+.ventana-comentarios textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+.ventana-comentarios textarea {
+  resize: none;
+  height: 90px;
+}
+.ventana-comentarios button {
+  width: 100%;
+  padding: 10px;
+  background: #f7b500;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
