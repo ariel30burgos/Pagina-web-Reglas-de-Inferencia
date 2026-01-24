@@ -134,6 +134,7 @@ body,html{
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/*Muestra barra lateral del menu*/
 .menu-navegacion{
   position: fixed;
   top: 0;
@@ -151,6 +152,39 @@ body,html{
   border-radius: 14px 0 0 14px;
   font-family: system-ui, sans-serif;
 }
+
+/*Vista de la clase card*/
+.card{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+.card h3{
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/*Vista de Reglas de inferencia*/
+.tamaño-tablas{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+.imagen-tabla{
+  width: 100%;
+  max-width: 450px;   /* controla tamaño */
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.intro-ejemplos{
+  color: #ffffff;
+}
+
 
 .menu-navegacion.activo{
   right: 0;
