@@ -591,3 +591,65 @@ body,html{
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/*PARA MATLAB*/
+.codigo-matlab {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.matlab-header {
+  background-color: #e6e6e6;
+  padding: 8px 12px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.matlab-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.matlab-dot.red { background-color: #ff5f56; }
+.matlab-dot.yellow { background-color: #ffbd2e; }
+.matlab-dot.green { background-color: #27c93f; }
+
+.matlab-title {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.matlab-code {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 16px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.comentario {
+  color: #008000; /* Verde MATLAB */
+}
+
+.keyword {
+  color: #0000ff; /* Azul palabras clave */
+  font-weight: bold;
+}
+
+.nota {
+  font-size: 13px;
+  margin-top: 8px;
+  color: #888585;
+  font-style: italic;
+}

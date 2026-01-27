@@ -194,7 +194,7 @@
 
         <section id="ejemplos" class="contenedor">
             <div class="card">
-            <h2>Ejemplos</h2>            
+            <h2>Ejemplos y Matlab</h2>            
             <p>Despliega cada regla para ver el ejemplo aplicado.</p>
             </div>
 
@@ -267,6 +267,33 @@
         </section>
 
 
+          <!--PARA MATLAB-->
+   <section class="codigo-matlab">
+    <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+    </div>
+
+    <pre class="matlab-code">    
+         <span class="comentario">% Regla de inferencia: Modus Ponens</span>
+         <span class="comentario">% Definimos las proposiciones</span>
+         <span class="comentario">% p: Esta lloviendo</span>
+         <span class="comentario">% q: La calle esta mojada</span>
+          p = true;  
+          q = false; 
+         <span class="keyword">if</span> p == true
+          q = true;
+         <span class="keyword">end</span>
+         <span class="comentario">% Mostrar resultado</span>
+         disp('MODUS PONENS:')
+         disp(['Esta lloviendo = ', num2str(p)])
+         disp(['La calle esta mojada = ', num2str(q)])
+         disp('Esta lloviendo, entonces la calle esta mojada')
+    </pre>
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+    </section>
 
 
 
@@ -948,7 +975,9 @@
       </a>
     </div>
   </div>
-  
+   
+
+  <!--SECCION DE LOS COMENTARIOS-->  
   <div class="footer-comentarios" id="comentarios">
   <h3>Déjanos tu pregunta</h3>
 
