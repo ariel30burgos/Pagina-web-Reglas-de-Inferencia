@@ -40,6 +40,8 @@
 
     <main>
         <section id="introduccion" class="introduccion contenedor">
+            
+            <div class="card">
             <h2>Introduccion</h2>
             <P>Las reglas de inferencia son principios lógicos que permiten derivar conclusiones válidas a partir de un conjunto de premisas(proposiciones). Una premisa es una proposición que se asume como
                 verdadera desde el inicio de un razonamiento lógico. A partir de estas premisas se aplican reglas formales con el fin de
@@ -51,10 +53,14 @@
                 a partir de las cuales se deriva una conclusión (q). El símbolo ∴ se lee “por lo tanto” y se utiliza para indicar el paso hacia la conclusión (∴ q).</p>
             <p>Sin embargo, es importante destacar que un argumento no afirma que la conclusión sea verdadera en la realidad, sino que establece que, si las premisas
                 son verdaderas, entonces la conclusión también debe serlo. Por esta razón, se dice que un argumento es válido por su forma lógica y no por el contenido de sus proposiciones.</p>
+                </div>
         </section>
 
-        <section id="reglas" class="contenedor">
-            <h2>Reglas de inferencia y Tabla guia</h2>
+        <section id="reglas" class="contenedor">                           
+            <div class="card">
+            <h2>Reglas de inferencia</h2>
+
+            <div class="tamaño-tablas">
             <img
               src="imagenes/1.png"
               alt="Tabla de reglas de inferencia lógica 1"
@@ -65,34 +71,62 @@
               alt="Tabla de reglas de inferencia lógica 2"
               class="imagen-tabla"
             >
+            </div>
+            </div>
 
-            <p>-Modus Ponens</p>
+            <div class="card">
+            <h3>Modus Ponens</h3>
+            <div class="card-content">
+                
+                <div class="card-text">
             <p>Como se muestra en la tabla, la estructura de la regla cuenta con p->q y además con p, eso quiere decir que como premisas tenemos esas dos proposiciones. Siendo que las premisas (p->q) y (p)
                 son verdaderas el resultante es q que también debe ser verdadera, caso contrario si (q) fuese falsa, (p->q) también seria falsa. Para este caso es fácil comprobar dado que se maneja con la tabla de
                 verdad de la implicación. Otro caso puede ser que (p->q) y (–q) como premisas el resultante o conclusión será –p, esto sucede nuevamente por la propiedad de la implicación.</p>
+                </div>
               <img
-              src="imagenes/3.png"
-              class="imagen-tabla"
+              src="imagenes/3.png"          
             >
-            <p>-Modus Tollens</p>
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Modus Tollens</h3>
+            <div class="card-content">
+
+                <div class="card-text">
             <p>Esta regla de inferencia utiliza como premisas p→q  y ¬q. Si ambas premisas se asumen como verdaderas, se concluye necesariamente ¬p (∴¬p).
                 La posible confusión suele surgir a partir de la premisa ¬q, ya que esta indica que la proposición q es falsa. Sin embargo, dicha proposición no constituye la conclusión, sino una de
                 las premisas del argumento. Dado que una implicación solo es falsa cuando el antecedente es verdadero y el consecuente es falso, y puesto que q es falsa, el antecedente p no puede
                 ser verdadero. Por lo tanto, se concluye que p es falsa.
                 Esta conclusión puede verificarse mediante la tabla de verdad de la implicación, considerando los valores de verdad negados y no negados de las proposiciones involucradas.</p>
+                </div>
             <img
               src="imagenes/4.png"
-              class="imagen-tabla"
+              
             >
-            <p>-Suma o Generalización</p>
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Suma o Generalización</h3>
+            <div class="card-content">
+                
+                <div class="card-text">
             <p>La regla de inferencia Suma, también conocida como introducción a la disyunción o generalización, establece que dada una proposición cualquiera p, se puede concluir la disyunción p ∨ q (∴ p ∨ q), donde q es una proposición arbitraria.
               Esta regla se fundamenta en la propiedad de la disyunción, según la cual una proposición disyuntiva es verdadera si al menos uno de sus componentes lo es. Por lo tanto, si p es verdadera, la proposición p ∨ q será verdadera independientemente del valor de verdad de q.
               En algunos contextos informales, esta regla se describe como “p o cualquier otra proposición”, aunque formalmente se expresa como la introducción de una disyunción a partir de una premisa verdadera. </p>
-        <img
-              src="imagenes/5.png"
-              class="imagen-tabla"
+              </div>
+            <img
+              src="imagenes/5.png"             
             >
-            <p>-Simplificación</p>
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Simplificación</h3>
+            <div class="card-content">
+
+                <div class="card-text">
             <p>La regla de inferencia Simplificación establece que, dada una premisa de la forma
             p ∧ q, se puede concluir cualquiera de sus componentes, es decir, p o q
             (∴ p) o (∴ q).
@@ -100,44 +134,70 @@
             cuando ambas proposiciones que la conforman son verdaderas. Por lo tanto, si se asume como verdadera la proposición p ∧ q, se garantiza que tanto p como q son verdaderas de manera individual.
             En consecuencia, es válido concluir cualquiera de las dos proposiciones que forman la conjunción, dependiendo de cuál sea necesaria en el razonamiento.
             </p>
+            </div>
              <img
-              src="imagenes/6.png"
-              class="imagen-tabla"
+              src="imagenes/6.png"              
             >
-            <p>-Conjunción</p>
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Conjunción</h3>
+            <div class="card-content">
+
+                <div class="card-text">
             <p>Para esta regla consideramos las premisas p y q como verdaderas. Con base a la propiedad de la conjunción, se establece que ambas proposiciones son verdaderas, entonces su conjunción
                 debe ser verdadera. (∴ p ∧ q)
                 De igual manera que la regla de la simplificación, es una de las reglas más sencillas por que únicamente se aplica la lógica de la conjunción. Sin información adicional se llega a la lógica
                 fundamental de la conjunción llegando a una sola proposición compuesta.
                 </p>
+                </div>
              <img
-              src="imagenes/7.png"
-              class="imagen-tabla"
+              src="imagenes/7.png"              
             >
-            <p>-Silogismo Hipotético</p>
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Silogismo Hipotético</h3>
+            <div class="card-content">
+
+                <div class="card-text">
             <p>La regla de inferencia Silogismo Hipotético o también conocida como la regla de la transitividad, menciona que al tener dos proposiciones compuestas p->q y q ->r, entonces se concluye p->r (∴p->r).
                 Esta regla se fundamenta en el carácter transitivo de la implicación lógica: si la verdad de p garantiza la verdad de q, y la verdad de q garantiza la verdad de r, entonces la verdad de p garantiza necesariamente la verdad de r.
                 A manera de ejemplo, si el objetivo es ir desde el punto A hasta el punto B, y el único camino posible es atravesar una secuencia de puntos intermedios A→1→2→3→B, entonces, dado que cada tramo mantiene una relación de dependencia, se puede concluir que existe una relación directa entre A y B.
             </p>
+            </div>
              <img
-              src="imagenes/8.png"
-              class="imagen-tabla"
+              src="imagenes/8.png"              
             >
-            <p>-Silogismo Disyuntivo</p>
+            </div>
+            </div>
+
+            <div class="card">
+            <h3>Silogismo Disyuntivo</h3>
+            <div class="card-content">        
+
+                <div class="card-text">
             <p>El Silogismo Disyuntivo es una regla de inferencia que, para muchos estudiantes, resulta una de las más complejas. Su estructura se compone de las premisas p ∨ q y ¬p, a partir de las cuales se concluye q (∴ q).
             Esta conclusión se justifica porque, al ser verdadera la proposición ¬p, se establece que p es falsa. Dado que la disyunción p ∨ q es verdadera y una disyunción solo es falsa cuando ambos componentes son falsos, es necesario que q sea verdadera para que la proposición disyuntiva se mantenga verdadera.
             Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción, según el cual basta con que una de las proposiciones sea verdadera para que toda la disyunción lo sea.
             </p>
+            </div>
              <img
-              src="imagenes/9.png"
-              class="imagen-tabla"
+              src="imagenes/9.png"             
             >
+            </div>
+            </div>
 
         </section>
 
         <section id="ejemplos" class="contenedor">
-            <h2>Ejemplos</h2>
-            <p class="intro-ejemplos">Despliega cada regla para ver el ejemplo aplicado.</p>
+            <div class="card">
+            <h2>Ejemplos y Matlab</h2>            
+            <p>Despliega cada regla para ver el ejemplo aplicado.</p>
+            </div>
+
             <div class="ejemplos-grid">
                 <details class="ejemplo-card" open>
                     <summary>Modus Tollens</summary>
@@ -203,14 +263,45 @@
                 </ul>
                 <p class="ejemplo-nota">Permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
             </details>
-
             </div>
-
         </section>
 
+
+          <!--PARA MATLAB-->
+   <section class="codigo-matlab">
+    <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+    </div>
+
+    <pre class="matlab-code">    
+         <span class="comentario">% Regla de inferencia: Modus Ponens</span>
+         <span class="comentario">% Definimos las proposiciones</span>
+         <span class="comentario">% p: Esta lloviendo</span>
+         <span class="comentario">% q: La calle esta mojada</span>
+          p = true;  
+          q = false; 
+         <span class="keyword">if</span> p == true
+          q = true;
+         <span class="keyword">end</span>
+         <span class="comentario">% Mostrar resultado</span>
+         disp('MODUS PONENS:')
+         disp(['Esta lloviendo = ', num2str(p)])
+         disp(['La calle esta mojada = ', num2str(q)])
+         disp('Esta lloviendo, entonces la calle esta mojada')
+    </pre>
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+    </section>
+
+
+
         <section id="ejercicio" class="contenedor">
+            <div class="card">
             <h2>Ejercicio interactivo</h2>
-            <p class="intro-ejercicios">4 Rondas de 7 preguntas cada una. ¡Demuestra tu conocimiento!</p>
+            <p>Tienes 4 Rondas de 7 preguntas cada una. ¡Demuestra tu conocimiento!</p>
+            </div>
             <div id="indicador-ronda" class="indicador-ronda">Ronda 1 de 4</div>
 
             <div class="ejercicios-container" id="ejercicios-container">
@@ -655,7 +746,8 @@
         </section>
 
         <section id="video" class="video contenedor">
-            <h2 class="subtitulo">Video</h2>
+            <div class="card">
+            <h3>Video</h3>
 
             <div class="video-wrapper">
                 <iframe
@@ -666,28 +758,12 @@
                 allowfullscreen>
                 </iframe>
             </div>
-
-            <p>LINK DEL VIDEO CON UN ICONO DE YOUTUBE O COLOCAR EL VIDEO DIRECTO EN LA PAGINA</p>
+            <p>COLOCAR EL VIDEO DIRECTO EN LA PAGINA</p>
+            </div>
         </section>
     </main>
 
 
-    <footer id="contacto">
-        <div class="contenedor footer-content">
-            <div class="contact-us">
-                <h2 class="marca-de-agua">MathDiscretas EPN</h2>
-                <p>Solventamos cualquier duda que surga durante tu aprendizaje en nuestra pagina</p>
-            </div>
-            <div class="asistencia-virtual">
-                <a href="./" class="icono-asistencia">
-                    <i class='bx  bx-help-circle'></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/categories.js"></script>
-    <!--<script src="js/lightbox.js"><srcipt>-->
 
     <script>
         // ====== MENÚ HAMBURGUESA ======
@@ -881,5 +957,42 @@
         // Cargar la primera ronda al iniciar
         cargarRonda(1);
     </script>
-</body>
+
+
+
+<!--ESTE ES EL PIE DE PAGINA-->  
+<footer class="footer"> 
+  <div class="footer-contenido">
+
+    <div class="footer-info">
+      <h1>MathDiscretas EPN</h1>
+      <p>Solventamos cualquier duda que surja durante tu aprendizaje.</p>
+    </div>
+
+    <div class="footer-ayuda">
+      <a class="icono-ayuda" id="botnoAyuda" title="Tengo una pregunta">
+        <i class='bx bx-help-circle'></i>
+      </a>
+    </div>
+  </div>
+   
+
+  <!--SECCION DE LOS COMENTARIOS-->  
+  <div class="footer-comentarios" id="comentarios">
+  <h3>Déjanos tu pregunta</h3>
+
+  <form class="ventana-comentarios">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="email" placeholder="Tu correo" required>
+    <textarea placeholder="Escribe tu comentario..." required></textarea>
+    <button type="submit">Enviar</button>    
+  </form>
+  </div>
+  <a href="#comentarios" class="icono-ayuda" id="botonAyuda">
+    <i class='bx bx-help-circle'></i>
+  </a>
+
+  </footer>
+
+ </body>
 </html>
