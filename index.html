@@ -293,6 +293,62 @@
          disp('Esta lloviendo, entonces la calle esta mojada')
     </pre>
     <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+
+       <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+       </div>
+
+        <pre class="matlab-code">
+        <span class="comentario">% Regla de inferencia: Modus Tollens</span>
+        <span class="comentario">% p: Está lloviendo</span>
+        <span class="comentario">% q: La calle está mojada</span>
+
+        p = true;
+        q = false;
+
+        <span class="keyword">if</span> q == false
+        p = false;
+        <span class="keyword">end</span>
+
+        <span class="comentario">% Mostrar resultado</span>
+    disp('MODUS TOLLENS:')
+    disp(['Esta lloviendo = ', num2str(p)])
+    disp(['La calle esta mojada = ', num2str(q)])
+    disp('La calle no esta mojada, entonces no esta lloviendo')
+    </pre>
+<p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+
+
+
+       <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+    </div>
+
+    <pre class="matlab-code">
+    <span class="comentario">% Regla de inferencia: Suma (Adición)</span>
+    <span class="comentario">% p: Está lloviendo</span>
+    <span class="comentario">% q: Hace frio</span>
+
+    p = true;
+    q = false;
+
+    resultado = p || q;
+
+    <span class="comentario">% Mostrar resultado</span>
+        disp('SUMA (ADICION):')
+        disp(['Esta lloviendo = ', num2str(p)])
+        disp(['Hace frio = ', num2str(q)])
+        disp(['p OR q = ', num2str(resultado)])
+        disp('Esta lloviendo, entonces esta lloviendo o hace frio')
+    </pre>
+
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
     </section>
 
 
