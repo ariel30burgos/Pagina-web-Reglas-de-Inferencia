@@ -534,7 +534,7 @@ body,html{
   margin-bottom: 8px;
 }
 .footer-info p {
-  font-size: 16px;  
+  font-size: 16px;
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -652,4 +652,24 @@ body,html{
   margin-top: 8px;
   color: #888585;
   font-style: italic;
+}
+
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 80.60%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
